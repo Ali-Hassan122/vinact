@@ -1,0 +1,117 @@
+function initColorSwitcher() {
+    // ColorSwitcher.init([
+    //     { color: "#38ceea", title: "Blue", href: "http://demo.harbourthemes.com/demo/dot/assets/css/colors/color-1.css" },
+    //     { color: "#3e4964", title: "Dark Blue", href: "http://demo.harbourthemes.com/demo/dot/assets/css/colors/color-2.css" },
+    // ]);
+}
+function initBootstrapHoverDropdown() {
+    $(".bs-dropdown").dropdownHover().dropdown();
+}
+function initNavBg() {
+    var e = $(".container-nav");
+    $(window).on("scroll", function () {
+        $(this).scrollTop() > 0 ? e.removeClass("nav-shadow").addClass("nav-shadow") : $(this).scrollTop() <= 0 && e.removeClass("nav-shadow").addClass("nav-shadow");
+    });
+}
+function initAOS() {
+    AOS.init({
+        duration: 700,
+        delay: 100,
+        once: !0,
+        disable: function () {
+            return window.innerWidth < 420;
+        },
+    });
+}
+function initVideo() {
+    $(".popup-video").magnificPopup({ disableOn: 700, type: "iframe", mainClass: "mfp-fade", removalDelay: 160, preloader: !1, fixedContentPos: !1 });
+}
+function initPartnersSlider() {
+    $(".partners-slider").owlCarousel({ loop: !0, autoplay: !0, autoplayTimeout: 2e3, responsive: { 0: { items: 2 }, 767: { items: 3 }, 1199: { items: 6 } } });
+}
+function initParallaxBg() {
+    $(".download-parallax").parallax("50%", 0.2);
+}
+function initIndexSlider() {
+    $(".index-slider").owlCarousel({ loop: !0, center: !0, margin: 0, dots: !1, nav: !0, responsive: { 0: { items: 2 }, 767: { items: 3 }, 1199: { items: 5 } } });
+}
+function validateEmail(e) {
+    return /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(e);
+}
+function initNewsletter() {
+    var e = $("#newsletter-form"),
+        n = $("#newsletter-submit"),
+        t = $("#newsletter-email");
+    e.submit(function () {
+        return !1;
+    }),
+        n.on("click", function () {
+            var o = validateEmail(t.val());
+            !1 === o ? n.addClass("newsletter-field-error") : !0 === o && n.removeClass("newsletter-field-error"),
+                !0 === o &&
+                    (n.replaceWith("<span class='form-send'>send...</span>"),
+                    $.ajax({
+                        type: "POST",
+                        url: "newsletter.php",
+                        data: e.serialize(),
+                        success: function (n) {
+                            "true" === n &&
+                                e.fadeOut("fast", function () {
+                                    $(this).before("<p class='newslatter-send'>Thank you!</p>");
+                                });
+                        },
+                    }));
+        });
+}
+function initNewsletterInHeader() {
+    var e = $("#header-newsletter-form"),
+        n = $("#header-newsletter-submit"),
+        t = $("#header-newsletter-email");
+    e.submit(function () {
+        return !1;
+    }),
+        n.on("click", function () {
+            var o = validateEmail(t.val());
+            !1 === o ? n.addClass("newsletter-field-error") : !0 === o && n.removeClass("newsletter-field-error"),
+                !0 === o &&
+                    (n.replaceWith("<span class='form-send'>send...</span>"),
+                    $.ajax({
+                        type: "POST",
+                        url: "header-newsletter.php",
+                        data: e.serialize(),
+                        success: function (n) {
+                            "true" === n &&
+                                e.fadeOut("fast", function () {
+                                    $(this).before("<p class='header-send'>Thank you!</p>");
+                                });
+                        },
+                    }));
+        });
+}
+jQuery(function (e) {
+    "use strict";
+    e(window).on("load", function () {
+        e("#page-preloader").delay(1e3).fadeOut("slow");
+    }),
+        e(".nav-icon").on("click", function () {
+            e(this).toggleClass("open");
+        }),
+        e(window).width() <= 768 &&
+            (e(".dropdown-menu").on("click", function () {
+                e(".navbar-collapse").removeClass("in"), e(".nav-icon").toggleClass("open");
+            }),
+            e("li > a.simple-link").on("click", function () {
+                e(".navbar-collapse").removeClass("in"), e(".nav-icon").toggleClass("open");
+            })),
+        e(window).width() >= 768 && initBootstrapHoverDropdown(),
+        initNavBg(),
+        initAOS(),
+        initPartnersSlider(),
+        initVideo(),
+        initParallaxBg(),
+        initIndexSlider(),
+        initContact(),
+        initNewsletter(),
+        initNewsletterInHeader(),
+        initColorSwitcher();
+});

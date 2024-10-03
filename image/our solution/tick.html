@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://vinact.com/our-solution -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!---- mgnificpopup error/// 
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.js"></script> -->
+
+<!-- Magnific Popup core JS file -->
+
+<!---- mgnificpopup error/// -->
+
+
+
+    
+    <title> |  Vinact </title>
+
+    <meta name="author" content="https://vinact.com/">
+
+    <meta name="keywords" content="">
+
+    <meta name="description" content="">
+
+    <!-- Twitter Card data -->
+
+    <meta property="og:url" content="javascript:void(0);">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="Brand">
+    <meta property="og:site_name" content="vinact">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://vinact.com/static/front/theme1/images/noimage.jpg">
+
+    <!-- end facebook cards -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- twitter card data -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:title" content="-Vinact">
+    <meta property="twitter:site" content="@Vinact">
+    <meta property="twitter:image" content="https://vinact.com/static/front/theme1/images/noimage.jpg">
+    <meta property="twitter:creator" content="@Vinact">
+
+    <!-- end twitr card -->
+    <link rel="shortcut icon" href="https://vinact.com/uploads/outlet-type/actual-images/fav-updated-1-image-.jpg">
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">  -->
+
+    <link href="./tick_files/css2" rel="stylesheet">
+
+    <link href="./tick_files/bootstrap.css" rel="stylesheet">
+
+    <link href="./tick_files/owl.carousel.css" rel="stylesheet">
+
+    <link href="./tick_files/owl.theme.default.css" rel="stylesheet">
+
+    <link href="./tick_files/aos.css" rel="stylesheet">
+
+    <link href="./tick_files/style.css" rel="stylesheet">
+
+    <link href="./tick_files/color-1.css" rel="stylesheet">
+    <!-- ============== Toastr ====================== -->
+    <link rel="stylesheet" href="./tick_files/toastr.css">
+
+    <link href="./tick_files/all.css" rel="stylesheet">
+
+    <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    
+    <style>
+        .navbar-top {
+            z-index: 999;
+        }
+
+        .main-menu ul ul {
+            position: absolute;
+            z-index: 1;
+            visibility: hidden;
+            left: 3px;
+            top: 100%;
+            margin: 0;
+            display: block;
+            padding: 0;
+            background: #fff;
+            min-width: 200px;
+            -webkit-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.175);
+            -moz-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.175);
+            box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.175);
+            transform: scale(0.4);
+            transform-origin: 10% top;
+            transition: 0.15s linear, 0.1s opacity cubic-bezier(0.39, 0.575, 0.565, 1), 0.15s transform cubic-bezier(0.1, 1.26, 0.83, 1);
+            opacity: 0;
+            -moz-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
+            -webkit-transition: all 0.2s ease;
+            -ms-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            border-radius: 3px;
+        }
+
+        .main-menu ul ul:before {
+            bottom: 100%;
+            left: 15%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-bottom-color: #fff;
+            border-width: 7px;
+            margin-left: -7px;
+        }
+
+        .main-menu ul ul li {
+            display: block;
+            height: auto;
+            padding: 0;
+        }
+
+        .main-menu ul ul li a {
+            font-size: 13px;
+            font-size: 0.8125rem;
+            color: #333;
+            border-bottom: 1px solid #ededed;
+            display: block;
+            padding: 15px 10px;
+            line-height: 1;
+            font-weight: 500;
+        }
+
+        .main-menu ul li:hover>ul {
+            padding: 0;
+            visibility: visible;
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+            -webkit-transition-duration: 0s, 0.2s, 0.2s;
+            transition-duration: 0s, 0.2s, 0.2s;
+
+        }
+
+        .main-menu ul ul li:first-child a:hover {
+            -webkit-border-radius: 3px 3px 0 0;
+            -moz-border-radius: 3px 3px 0 0;
+            -ms-border-radius: 3px 3px 0 0;
+            border-radius: 3px 3px 0 0;
+        }
+
+        .main-menu ul ul li:last-child a {
+            border-bottom: none;
+        }
+
+        .main-menu ul ul li:last-child a:hover {
+            -webkit-border-radius: 0 0 3px 3px;
+            -moz-border-radius: 0 0 3px 3px;
+            -ms-border-radius: 0 0 3px 3px;
+            border-radius: 0 0 3px 3px;
+        }
+
+        .main-menu ul ul li:hover>a {
+            background-color: #f9f9f9;
+            color: #333;
+            padding-left: 18px;
+        }
+
+        /* Submenu 2nd level right */
+        .main-menu ul ul.second_level_right {
+            left: auto;
+            right: 3px;
+        }
+
+        .main-menu ul ul.second_level_right:before {
+            right: 15%;
+            left: auto;
+        }
+
+        /* Submenu 3rd level */
+        .main-menu ul ul li span a {
+            font-weight: normal !important;
+        }
+
+        .main-menu ul ul li span a:hover {
+            color: #F08080;
+            padding-left: 18px;
+            opacity: 1;
+        }
+
+        .main-menu ul ul li span a:after {
+            font-family: 'ElegantIcons';
+            content: "\35";
+            float: right;
+            font-size: 16px;
+            font-size: 1rem;
+            margin-top: -2px;
+        }
+
+        .main-menu ul ul ul {
+            position: absolute;
+            border-top: 0;
+            z-index: 1;
+            height: auto;
+            left: 100%;
+            top: 0;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            min-width: 190px;
+            -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+        }
+
+        .main-menu ul ul ul.third_level_left {
+            right: 100%;
+            left: auto;
+        }
+
+        .main-menu ul ul ul li a {
+            border-bottom: 1px solid #ededed !important;
+        }
+
+        /* Arrows top 3rd level*/
+        .main-menu ul ul ul:before {
+            border-width: 0;
+            margin-left: 0;
+        }
+
+        .pclass {
+            color: white !important;
+            font-size: 10px;
+            font-weight: 400;
+            margin-bottom: 0px;
+        }
+
+        .contact-heading {
+            margin: 3.5rem 0 !important;
+        }
+
+        .white-fontt {
+            color: black !important;
+        }
+
+        @media only screen and (max-width: 320px) {
+            .scrollable-menu {
+                height: 100px;
+                overflow-x: hidden;
+            }
+        }
+    </style>
+
+    <!--  Stylessheet created by asad-->
+    <style>
+        .feature h3,
+        .feature p,
+        .about-text p,
+        .style-p,
+        .how-to-block-2 p,
+        .font-size-h1,
+        .font-size-h11,
+        .about-text ol>li,
+        .about-text ul>li,
+        .blogpost-content ul>li>span>p,
+        .comment_list h3,
+        .single_comment p,
+        .single_comment a,
+        .comment_list p,
+        #comments h4,
+        .main .page-title,
+        .post-date span,
+        .submitted,
+        .blogpost-content p .about---6 p {
+            color: black !important;
+        }
+
+        .partners a:active,
+        .partners a:focus,
+        .partners a:hover {
+            opacity: unset !important;
+        }
+
+        .partners a {
+            opacity: unset !important;
+        }
+    </style>
+    <!--  Stylessheet created by asad-->
+
+    <link rel="stylesheet" href="./tick_files/font-awesome.min.css" media="all"><script type="text/javascript" async="" src="./tick_files/analytics.js.download"></script><script type="text/javascript" async="" src="./tick_files/js"></script><script async="" src="./tick_files/js(1)"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-126976828-4');
+    </script>
+    <script>
+        //<![CDATA[ 
+        function loadCSS(e, t, n) {
+            "use strict";
+            var i = window.document.createElement("link");
+            var o = t || window.document.getElementsByTagName("script")[0];
+            i.rel = "stylesheet";
+            i.href = e;
+            i.media = "only x";
+            o.parentNode.insertBefore(i, o);
+            setTimeout(function() {
+                i.media = n || "all"
+            })
+        }
+        loadCSS("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+        //]]> 
+    </script>
+    <script src="./tick_files/jquery.min.js.download"></script>
+
+    
+</head>
+
+<body cz-shortcut-listen="true" data-aos-easing="ease" data-aos-duration="700" data-aos-delay="100" class="">
+
+    <div id="page" class="site wrapper" style="    overflow: hidden;">
+
+        <header id="masthead" class="site-header">
+
+            <nav id="site-navigation" class="navbar main-navigation nav-dark navbar-top">
+
+                <div class="container-fluid container-nav nav-shadow">
+
+                    <div class="container">
+                        <!-- <div class="row" style=" margin-top: 10px;">
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 floatright textaligncenter">
+                                <p class="pclass"><i class="fa fa-phone" aria-hidden="true"></i>
+                                    (888)922 6766                                 </p>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 floatright textalignright" style="text-align:right">
+                                <p class="pclass" style="text-transform: lowercase !important;"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    info@reachii.com                                </p>
+                            </div>
+                        </div> -->
+
+                        <div class="navbar-header">
+
+                            <button id="nav-icon" type="button" class="navbar-toggle collapsed nav-icon" data-toggle="collapse" data-target="#menu-navbar" aria-expanded="false">
+                                <span></span>
+                                <span> </span>
+                                <span></span>
+                                <span></span>
+                            </button>
+
+                            <a class="navbar-brand" href="https://vinact.com/"><img alt="Logo Updated" style="margin-top: 0px;" src="./tick_files/logo-updated---1-image-.jpg"></a>
+                        </div>
+
+                        <div id="menu-navbar" class="collapse navbar-collapse main-menu">
+
+                            <ul class="nav navbar-nav navbar-right">
+
+                                
+                                            <li class="menu-item  current-menu-item  menu-item-has-children traveltour-normal-menu">
+
+                                                <a href="https://vinact.com/">Home</a>
+                                            </li>
+
+                                        
+                                                <li class="menu-item  current-menu-item active menu-item-has-children traveltour-normal-menu">
+
+                                                    <a href="https://vinact.com/our-solution" class="sf-with-ul-pre">Our Solution</a>
+
+                                                </li>
+
+                                
+                                                <li class="menu-item  current-menu-item  menu-item-has-children traveltour-normal-menu">
+
+                                                    <a href="https://vinact.com/how-it-works" class="sf-with-ul-pre">How it works</a>
+
+                                                </li>
+
+                                
+                                                <li class="menu-item  current-menu-item  menu-item-has-children traveltour-normal-menu">
+
+                                                    <a href="https://vinact.com/our-company" class="sf-with-ul-pre">Our Company</a>
+
+                                                </li>
+
+                                
+                                <li class="menu-item  current-menu-item  menu-item-has-children traveltour-normal-menu">
+                                    <a href="https://vinact.com/apply-now" class="button button-full" title="Read More">Get Started</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav><!-- ================== EASY TO USE SECTION ================== -->
+
+
+   <section class="container-fluid header-content home-header" id="salonPosSystem">
+
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6">
+               <div class="header-text">
+                  <h3 class="page-title">Our Solutions</h3>
+                  <h1 class="primary-heading">Advanced <span> Salon POS System </span> that's easy-to-use</h1>
+                  <div class="title-desc">
+                     <p>Do you feel like the administration of running a beauty salon is a hassle? We can help. Easily manage your appointments, marketing and customers - wherever you are. Getting started is a breeze.</p>
+                  </div>
+                                       <a href="https://vinact.com/our-solution#" class="button button-full">Get Started</a>
+                                 </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="header-image solution-header-image">
+                     <img src="./tick_files/advanced-salon-pos-system-.jpg" alt="Advanced Salon POS System">
+            <span class="solution-object-1"></span>
+            <span class="solution-object-2"></span>
+            <span class="solution-object-3"></span>
+               </div>
+
+   </section>
+
+</header>
+
+<!-- ================== END EASY TO USE SECTION ================== -->
+
+<div id="content" class="site-content">
+   <div id="primary" class="content-area">
+      <main id="main" class="site-main">
+
+         <!-- ================== TOOLKIT SECTION START ================== -->
+
+         
+            <section class="container-fluid section-block toolkit-section">
+               <div class="container toolkit">
+                  <div class="row integration">
+                     <div class="col-xs-12 col-sm-7 col-md-7 section-block">
+                        <h1 class="secondary-heading">A complete toolkit for your Salon</h1>
+                        <h4 class="sub-heading">Organize all your administration from your pocket</h4>
+                        <p>Our beauty salon software brings order to your calendar and automatically syncs it with the cloud. Take care of your stock management, checkout and online bookings, wherever you are. Automatic appointment reminders helps you avoid no-shows, save valuable time and focus your full attention on your customers </p>
+
+                                             </div>
+                     <div class="col-xs-12 col-sm-5 col-md-5">
+                        <img src="./tick_files/a-complete-toolkit-for-your-salon-1-.jpg" alt="A complete toolkit for your Salon-1" title="" class="img-fluid demo-img">
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+         
+         <!-- ================== END TOOLKIT SECTION ================== -->
+
+         <!-- ================== WHY USE POS START ================== -->
+         
+            <section class="container-fluid section-block why-pos">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xs-12 col-sm-12 col-md-12">
+                        <h1 class="primary-heading text-center" style="margin-bottom: 30px;">Why Use <span> VINACT </span>  Salon POS</h1>
+                     </div>
+                  </div>
+                  <div class="row roww">
+                                             <div class="col-xs-12 col-sm-6 col-md-3">
+                           <div class="pos-box">
+
+                              <img class="pos-box-img" src="./tick_files/custom-image-52b84bda11-group-3483-.png" alt="">
+                              <h4 class="box-heading">Spend less time on Admin</h4>
+
+                              <p></p><ul>
+<li>Integrated smart calendar</li>
+<li>No more paperwork</li>
+<li>Simple checkout &amp; payment process</li>
+<li>Fourth Option is temporary</li>
+</ul><p></p>
+
+                           </div>
+                        </div>
+                                             <div class="col-xs-12 col-sm-6 col-md-3">
+                           <div class="pos-box">
+
+                              <img class="pos-box-img" src="./tick_files/custom-image-1c38da442-group-3484-.png" alt="">
+                              <h4 class="box-heading">Grow your beauty salon</h4>
+
+                              <p></p><ul>
+<li>Automated reminders, prevent no-shows</li>
+<li>Online bookings with payment integration</li>
+<li>Connect Facebook, Google and Instagram</li>
+</ul><p></p>
+
+                           </div>
+                        </div>
+                                             <div class="col-xs-12 col-sm-6 col-md-3">
+                           <div class="pos-box">
+
+                              <img class="pos-box-img" src="./tick_files/custom-image-df52ba533-group-3485-.png" alt="">
+                              <h4 class="box-heading">Get control of your finances</h4>
+
+                              <p></p><ul>
+<li>Clear overview of sales trends</li>
+<li>Automated reports for your accountant</li>
+<li>Helps you avoid paper and Excel</li>
+</ul><p></p>
+
+                           </div>
+                        </div>
+                                             <div class="col-xs-12 col-sm-6 col-md-3">
+                           <div class="pos-box">
+
+                              <img class="pos-box-img" src="./tick_files/custom-image-07cd13d14-group-3486-.png" alt="">
+                              <h4 class="box-heading">Easy to use &amp; Highly functional</h4>
+
+                              <p></p><ul>
+<li>Specially designed with simplicity in mind</li>
+<li>Features for running business smooth</li>
+<li>so you can focus on what you do best</li>
+</ul><p></p>
+
+                           </div>
+                        </div>
+                                       </div>
+               </div>
+            </section>
+
+                  <!-- ================== END WHY USE POS ================== -->
+
+         <!-- ================ HAPPY CLIENTS ================ -->
+
+         
+            <section class="container-fluid section-block">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xs-12 col-sm-12 col-md-12">
+                        <h1 class="primary-heading text-center" style="margin-bottom: 30px;">Happy Clients</h1>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="owl-carousel client-testimonial-carousel owl-loaded owl-drag">
+                                                         
+                                                         
+                                                         
+                                                   <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all; width: 1170px;"><div class="owl-item active" style="width: 360px; margin-right: 30px;"><div class="single-testimonial-item">
+                                 <img class="testimonial-image" src="./tick_files/custom-image-eb7678ca2-eyeglasses--.jpg" alt="">
+                                 <p class="testimonial-description">I've noticed that Salon's social networking sites have dramatically increased interaction since using Vinact's Marketing Solution package. Therefore, customers are very active in Salon's campaigns. Now, I have peace of mind because I have Vinact to support me.</p>
+                                 <h4 class="testimonial-title">Bella Spa - Binh Nguyen – (IL)</h4>
+                                 <small class="testimonial-subtitle">4 years of use | Silver Package</small>
+                              </div></div><div class="owl-item active" style="width: 360px; margin-right: 30px;"><div class="single-testimonial-item">
+                                 <img class="testimonial-image" src="./tick_files/le-nails-–-(mt)-.jpg" alt="Le Nails – (MT)">
+                                 <p class="testimonial-description">My family has 3 salons and all 3 use Vinact, thanks to the Self-Create Promotion feature, the salon's promotions are deployed proactively and faster. I use Vinact to generate discount codes and distribute them to loyal customers or members by SMS or email. Very effective!</p>
+                                 <h4 class="testimonial-title">Le Nails – (MT)</h4>
+                                 <small class="testimonial-subtitle">6 years of use | Silver Package</small>
+                              </div></div><div class="owl-item active" style="width: 360px; margin-right: 30px;"><div class="single-testimonial-item">
+                                 <img class="testimonial-image" src="./tick_files/effectively-thanks-to-the-synchronized-dat-.jpg" alt="effectively thanks to the synchronized dat">
+                                 <p class="testimonial-description">In the past, I was recommended to use Vinact by a friend. Since then, I have managed the nail salon more effectively thanks to the synchronized data. My employees also like Vinact it helps them be more proactive in their work. I'm so glad I got to know Vinact!</p>
+                                 <h4 class="testimonial-title">Kristin</h4>
+                                 <small class="testimonial-subtitle">6 years of use | Silver Package</small>
+                              </div></div></div></div><div class="owl-nav disabled"><div class="owl-prev disabled"><i class="fas fa-long-arrow-alt-left"></i></div><div class="owl-next disabled"><i class="fas fa-long-arrow-alt-right"></i></div></div><div class="owl-dots disabled"><div class="owl-dot active"><span></span></div></div></div>
+                     </div>
+                  </div> <!-- End Row -->
+                  <div class="row">
+                     <div class="col-xs-12 col-sm-12 col-md-12 text-center" style="margin-top:50px">
+                                                   <a href="https://vinact.com/#" class="button button-full">Learn More</a>
+                                             </div>
+                  </div>
+               </div>
+            </section>
+
+         
+         <!-- ================ END HAPPY CLIENTS ================ -->
+
+         <!-- ================  SYSTEM FEATURES ================ -->
+
+         <section class="container section-block features feature-section" id="restaurantPosSystem">
+            <div class="row roww text-center" style="justify-content: center;">
+               <div class="col-xs-12 col-sm-10 col-md-8">
+                  <h1 class="primary-heading">Restaurant POS System</h1>
+                  <p>Restaurant POS System description a global presence, bringing a truly global online business experience at your doorstep. Here is a list of business exploiting VINACT global presence to their growth &amp; progress. </p>
+               </div>
+            </div>
+            <div class="row roww">
+                                 <div class="col-xs-12 col-sm-6 col-md-3 feature aos-init aos-animate" data-aos="zoom-in-right">
+                     <div class="border-box border-box-1">
+                        <div class="f-image-container fetr_image">
+                           <img alt="software-image-2" style="max-height: 75px;" src="./tick_files/software-image2--.jpg">
+                        </div>
+                        <h4 class="feature-heading">Software</h4>
+                        <p></p><p>Get innovative software that aids in effective business practices. Our software was designed to running a r...</p>
+                     </div>
+                  </div>
+                                 <div class="col-xs-12 col-sm-6 col-md-3 feature aos-init aos-animate" data-aos="zoom-in-right">
+                     <div class="border-box border-box-2">
+                        <div class="f-image-container fetr_image">
+                           <img alt="Custom solution image" style="max-height: 75px;" src="./tick_files/custom-solution-image-.jpg">
+                        </div>
+                        <h4 class="feature-heading">Custom solution</h4>
+                        <p></p><p>Every restaurant and eatery is unique, which is why VINACT works with owners to supply them with custom sol...</p>
+                     </div>
+                  </div>
+                                 <div class="col-xs-12 col-sm-6 col-md-3 feature aos-init aos-animate" data-aos="zoom-in-right">
+                     <div class="border-box border-box-3">
+                        <div class="f-image-container fetr_image">
+                           <img alt="Software and order online-1" style="max-height: 75px;" src="./tick_files/software-and-order-online-1--.jpg">
+                        </div>
+                        <h4 class="feature-heading">Software and order online</h4>
+                        <p></p><p>Get our software shipped today, order online, learn online, and see the benefits of an automatic digital po...</p>
+                     </div>
+                  </div>
+                                 <div class="col-xs-12 col-sm-6 col-md-3 feature aos-init aos-animate" data-aos="zoom-in-right">
+                     <div class="border-box border-box-4">
+                        <div class="f-image-container fetr_image">
+                           <img alt="Turn key-solution" style="max-height: 75px;" src="./tick_files/turn-key-solution-.jpg">
+                        </div>
+                        <h4 class="feature-heading">Turn key-solution</h4>
+                        <p></p><p>End-to-end solutions that are ready to be implemented into your business today. Our system can be deployed ...</p>
+                     </div>
+                  </div>
+                           </div>
+         </section>
+
+         <!-- ================  END SYSTEM FEATURES ================ -->
+
+         <!-- ================  POS FEATURES ================ -->
+
+         <section class="container section-block">
+            <div class="row roww" style="align-items: center;">
+               <div class="col-xs-12 col-sm-12 col-md-6">
+                  <div class="row roww">
+                     <div class="col-xs-12 col-sm-12 col-md-12">
+                        <h1 class="primary-heading">POS Features</h1>
+                     </div>
+                                             <div class="col-sm-xs col-sm-6 col-md-6">
+                           <div class="pos-feature-box">
+                              <h4 class="feature-heading">Complete Dynamic Software</h4>
+                              <p class="feature-description">Our software is fully functional and optimized for complete convenience. </p>
+                           </div>
+                        </div>
+                                             <div class="col-sm-xs col-sm-6 col-md-6">
+                           <div class="pos-feature-box">
+                              <h4 class="feature-heading">Previous Order History </h4>
+                              <p class="feature-description">See order history, and gain insight into each customer's preferences. </p>
+                           </div>
+                        </div>
+                                             <div class="col-sm-xs col-sm-6 col-md-6">
+                           <div class="pos-feature-box">
+                              <h4 class="feature-heading">Deals/ Taxes &amp; Discounts</h4>
+                              <p class="feature-description">Offer deals and discounts and get up-to-date information on taxes. </p>
+                           </div>
+                        </div>
+                                             <div class="col-sm-xs col-sm-6 col-md-6">
+                           <div class="pos-feature-box">
+                              <h4 class="feature-heading">Kitchen Display</h4>
+                              <p class="feature-description">Improve the flow of work from the customer to server to the kitchen and back again! </p>
+                           </div>
+                        </div>
+                                             <div class="col-sm-xs col-sm-6 col-md-6">
+                           <div class="pos-feature-box">
+                              <h4 class="feature-heading">Table Management System</h4>
+                              <p class="feature-description">Our table management function can be used by anyone through a server or iPad. 									</p>
+                           </div>
+                        </div>
+                                             <div class="col-sm-xs col-sm-6 col-md-6">
+                           <div class="pos-feature-box">
+                              <h4 class="feature-heading">Multi-Language System</h4>
+                              <p class="feature-description">Our technology features a multilingual system for clear communication. </p>
+                           </div>
+                        </div>
+                                       </div>
+               </div>
+
+               <div class="col-xs-12 col-sm-12 col-md-6">
+                                       <img alt="" src="./tick_files/pos-features-updated-image-1-image--.jpg">
+                                 </div>
+
+            </div>
+         </section>
+
+         <!-- ================ END POS FEATURES ================ -->
+
+         <!-- ================ PRICING PLAN ================ -->
+
+         <section class="container section-block price_section">
+                              <div class="row-fluid-wrapper row-depth-1 row-number-10">
+                     <h1 class="primary-heading text-center">Pricing: Monthly</h1>
+                     <div id="tab_1" data-id="1" class="span12 widget-span widget-type-cell tab-group fade-up active" style="" data-widget-type="cell" data-x="0" data-w="12">
+                        <div class="row-fluid-wrapper row-depth-2 row-number-1">
+                           <section id="prices---2" class="container-fluid section-block prices price-2">
+                              <div class="row roww">
+                                                                        <div class="col-xs-12 col-sm-6 col-md-3">
+                                          <div class="border-box border-box-1" style="box-shadow: none;">
+                                             <h4>RIDER APP</h4>
+                                             <ul class="fa-ul">
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Geographical positioning for delivery</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Manage Availability status</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>View order history</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Update delivery status</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>User can see weekly income</li>
+                                                                                             </ul>
+                                          </div>
+                                       </div>
+                                                                        <div class="col-xs-12 col-sm-6 col-md-3">
+                                          <div class="border-box border-box-2" style="box-shadow: none;">
+                                             <h4>Admin App</h4>
+                                             <ul class="fa-ul">
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Order process options</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Order status</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Admin dashboard</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Order List</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Orders in que</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Periodic  Sales reports</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Periodic Order reports </li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Rider management</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Emergency outlet close</li>
+                                                                                             </ul>
+                                          </div>
+                                       </div>
+                                                                        <div class="col-xs-12 col-sm-6 col-md-3">
+                                          <div class="border-box border-box-3" style="box-shadow: none;">
+                                             <h4>User App</h4>
+                                             <ul class="fa-ul">
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Online orders from App</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Promotional Notification </li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Coupon Codes</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Taxes and discount system</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Schedule orders</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Can select pickup or delivery option</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Online payment options</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Customer order history</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Real time order tracking</li>
+                                                                                             </ul>
+                                          </div>
+                                       </div>
+                                                                        <div class="col-xs-12 col-sm-6 col-md-3">
+                                          <div class="border-box border-box-4" style="box-shadow: none;">
+                                             <h4>WEBSITE</h4>
+                                             <ul class="fa-ul">
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>White label business website</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Online ordering website</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>User profile management</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Online payment options</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Order status notifications</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Web admin dashboard</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Outlet management</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>CRM</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>General settings</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Rider management</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Unlimited staff account creation</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Add Unlimited items</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Products management</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Manage business timings</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>User friendly design</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>One click checkout</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>Order Management</li>
+                                                                                                      <li><span class="fa-li"><i class="fas fa-check-circle"></i></span>User Role Management</li>
+                                                                                             </ul>
+                                          </div>
+                                       </div>
+                                                               </div>
+                           </section>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                           <a href="https://vinact.com/contact-us" class="button button-full">Get Started</a>
+                        </div>
+                     </div>
+                  </div>
+                     </section>
+
+      </main>
+   </div>
+</div>
+
+<script>
+   $(document).ready(function() {
+      $(".owl-carousel").owlCarousel({
+         // autoplay:false,
+         margin: 30,
+         loop: true,
+         dots: true,
+         responsiveClass: true,
+         responsive: {
+            0: {
+               items: 1,
+               nav: true
+            },
+            600: {
+               items: 2,
+               nav: false
+            },
+            1000: {
+               items: 3,
+               nav: true,
+               loop: false
+            }
+         },
+         navText: ["<i class='fas fa-long-arrow-alt-left'></i>", "<i class='fas fa-long-arrow-alt-right'></i>"]
+      });
+   });
+</script><style>
+  .bg-primary-color .newsletter-form .newsletter-submit {
+    color: #039906;
+  }
+
+  .fa-arrow-right {
+    font-size: xx-small;
+  }
+
+  .newsletter-form-section .newsletter-form .newsletter-submit {
+    color: #38ceea;
+  }
+
+  .newsletter-form-section .newsletter-form .newsletter-submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    padding: .75rem 1.5rem;
+    -webkit-border-radius: 0 25px 25px 0;
+    -moz-border-radius: 0 25px 25px 0;
+    border-radius: 0 25px 25px 0;
+    background: 0 0;
+  }
+
+  #sticky-social {
+    left: 0;
+    position: fixed;
+    top: 150px;
+    z-index: 998;
+  }
+
+  a.entypo-facebook {
+    border-radius: 5px;
+  }
+
+  #sticky-social a {
+    background: #333;
+    color: #fff;
+    display: block;
+    height: 35px;
+    font: 16px "Open Sans", sans-serif;
+    line-height: 35px;
+    position: relative;
+    text-align: center;
+    width: 35px;
+  }
+
+  #sticky-social a span {
+    line-height: 35px;
+    left: -120px;
+    position: absolute;
+    text-align: center;
+    width: 120px;
+  }
+
+  #sticky-social a:hover span {
+    left: 100%;
+  }
+
+  #sticky-social a[class*="facebook"],
+  #sticky-social a[class*="facebook"]:hover,
+  #sticky-social a[class*="facebook"] span {
+    background: #393939;
+  }
+
+  a.entypo-twitter {
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    border-radius: 5px;
+  }
+
+  .footer-color {
+    background: #0b0a0a  }
+
+  .footer-txt {
+    color: #fafafa !important;
+  }
+
+  a:hover,
+  a:active,
+  a {
+    color: #fff;
+  }
+
+  #newsletter-emails {
+    width: 102% !important;
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border: none;
+    background: #fff;
+    padding: .75rem 2rem .75rem 1.5rem;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    color: #445383;
+    -webkit-box-shadow: 0 0 25px rgba(151, 160, 191, .3);
+    -moz-box-shadow: 0 0 25px rgba(151, 160, 191, .3);
+    box-shadow: 0 0 25px rgba(151, 160, 191, .3);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+  #newsletter-submits {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    padding: .75rem 1.5rem;
+    -webkit-border-radius: 0 25px 25px 0;
+    -moz-border-radius: 0 25px 25px 0;
+    border-radius: 0 25px 25px 0 !important;
+    background: 0 0;
+  }
+</style>
+
+<!-- Start Footer -->
+<footer id="colophon" class="container-fluid site-footer footer-color">
+  <div class="container footer-container site-top-footer">
+    <div class="row roww">
+
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <a class="footer-logo" href="https://vinact.com/">
+          <img alt="Logo Updated" style="margin-top: 0px;" src="./tick_files/custom-image-cb86a30c9-fajira-green--.jpg">
+        </a>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <h4 class="footer-heading">Our Products</h4>
+       
+        <ul class="menu list-menu" itemscope="">
+         
+                <li itemprop="name" class="flist"><a itemprop="url" href="https://vinact.com/our-solution#salonPosSystem">Salon POS System</a></li>
+                <li itemprop="name" class="flist"><a itemprop="url" href="https://vinact.com/our-solution#restaurantPosSystem">Restaurant POS System</a></li>
+                <li itemprop="name" class="flist"><a itemprop="url" href="https://vinact.com/how-it-works">How it Works</a></li>
+              
+        </ul>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <h4 class="footer-heading">Company</h4>
+        <ul class="menu list-menu" itemscope="">
+                        <li itemprop="name" class="flist"><a itemprop="url" href="https://vinact.com/terms-and-conditions">Terms and Conditions</a></li>
+                        <li itemprop="name" class="flist"><a itemprop="url" href="https://vinact.com/privacy-policy">Privacy Policy</a></li>
+                        <li itemprop="name" class="flist"><a itemprop="url" href="https://vinact.com/our-company">Our Company</a></li>
+                        <li itemprop="name" class="flist"><a itemprop="url" href="https://vinact.com/blog">Blog</a></li>
+                  </ul>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-3 last">
+        <h4 class="footer-heading">Contact Us</h4>
+        <ul class="menu list-menu" itemscope="">
+          <li itemprop="name" class="flist">2020 Calamos Court, Suite 200, Naperville, IL 60563 
+            <br>(888)922 6766</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 bottom-footer">
+        
+        <p class="footer-txt">© <span> 2024 <span class="footer_txt">Vinact All Rights Reserved</span></span></p> 
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+</div>
+
+<script>
+  initContact();
+
+  function initContact() {
+
+    var newsletter_form = $('.newsletter-form');
+    var newsletter_submit = $('#header-newsletter-submit');
+    var newsletter_email = $('#header-newsletter-email_set');
+
+
+    newsletter_form.submit(function() {
+      return false;
+    });
+    newsletter_submit.off('click').on('click', function() {
+
+      // email
+      var emailval = newsletter_email.val();
+      var emailvalid = validateEmail(emailval);
+      if (emailvalid === false) {
+        newsletter_submit.attr('style', 'color:red!important;');
+        $('.error').text('Fill all required fields').show()
+      } else if (emailvalid === true) {
+        newsletter_submit.removeAttr('style');
+      }
+
+      $('.contact-send').remove()
+      if (emailvalid == true) {
+        newsletter_submit.replaceWith("<span class='form-send form-send-white' style='color:white;'>send...</span>");
+        $.ajax({
+          type: 'POST',
+          url: "https://vinact.com/front/newsletter_submit",
+          data: newsletter_form.serialize(),
+          success: function(data) {
+
+            newsletter_form.fadeOut('fast', function() {
+              $(this).before("<p class='contact-send' style='color:black;'>Thank you!</p>");
+            });
+
+          }
+        });
+      }
+    });
+  }
+
+  initContact2();
+
+  function initContact2() {
+
+    var newsletter_form = $('.newsletter-forms');
+    var newsletter_submit = $('#newsletter-submits');
+    var newsletter_email = $('#newsletter-emails');
+
+
+    newsletter_form.submit(function() {
+      return false;
+    });
+    newsletter_submit.off('click').on('click', function() {
+
+      // email
+      var emailval = newsletter_email.val();
+      var emailvalid = validateEmail(emailval);
+      if (emailvalid === false) {
+        newsletter_submit.attr('style', 'color:red!important;');
+        $('.errors').text('Enter valid email address').show();
+      } else if (emailvalid === true) {
+        newsletter_submit.removeAttr('style');
+        $('.errors').text('Enter valid email address').remove();
+      }
+
+      $('.contact-send').remove()
+      if (emailvalid == true) {
+        newsletter_submit.replaceWith("<span class='form-send form-send-white' style='color:white;'>send...</span>");
+        $.ajax({
+          type: 'POST',
+          url: "https://vinact.com/front/newsletter_submit",
+          data: newsletter_form.serialize(),
+          success: function(data) {
+
+            newsletter_form.fadeOut('fast', function() {
+              $(this).before("<p class='contact-send' style='color:white;'>Thank you!</p>");
+            });
+
+          }
+        });
+      }
+    });
+  }
+</script>
+
+
+
+<script src="./tick_files/bootstrap.min.js.download"></script>
+<script src="./tick_files/bootstrap-hover-dropdown.js.download"></script>
+<script src="./tick_files/magnific-popup.min.js.download"></script>
+<script src="./tick_files/owl.carousel.min.js.download"></script>
+<script src="./tick_files/parallax.js.download"></script>
+<script src="./tick_files/aos.js.download"></script>
+<script>
+  AOS.init({
+    duration: 1200,
+  })
+</script>
+<script src="./tick_files/init.js.download"></script>
+<!-- ===================== Toastr ========================= -->
+<script src="./tick_files/toastr.js.download"></script>
+
+
+<script>
+  $("a[data-toggle]").on("click", function(e) {
+    e.preventDefault();
+    var selector = $(this).data("toggle");
+    $(".about-text div").hide();
+    $(selector).show();
+  });
+</script><iframe allow="join-ad-interest-group" data-tagging-id="G-E99CPZJ7ZR" data-load-time="1722248901520" height="0" width="0" src="./tick_files/rul.html" style="display: none; visibility: hidden;"></iframe>
+
+
+</body></html>
